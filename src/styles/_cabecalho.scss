@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+.cabecalho{
+    height: 120px;
+    background-color: variaveis.$corCabacalho;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+
+        &__logo{
+            height: 120px;
+        }
+    }
+
+    &__nav{
+        &__item{
+            display: inline;
+            margin-left: 10px;
+
+            a{
+                color: variaveis.$corDeTitulo;
+                text-decoration: none;
+                padding: 5px;
+
+            &:hover{
+                color: variaveis.$corDeFont;
+                text-decoration: underline;
+            }
+            }
+        }
+    }
+    
+}
+

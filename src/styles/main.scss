@@ -1,0 +1,54 @@
+@use 'variaveis';
+@use 'cabecalho';
+@use 'apresentacao';
+@use 'loja';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belanosima', sans-serif;
+}
+
+body{
+    background-color: variaveis.$corDeFundo ;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@mixin title($fontSize:44px){
+    font-size: $fontSize;
+    color: variaveis.$corDeTitulo;
+}
+
+@mixin text($fontSize:14px){
+    font-size: $fontSize;
+    color: variaveis.$corDeFont;
+}
+
+.title{
+    @include title(44px)
+}
+
+.title__big{
+    @include title(48px)
+}
+
+.title__small{
+    @include title(40px)
+}
+
+.text{
+    @include text(16px)
+}
+
+.text__big{
+    @include text(20px)
+}
+
+.text__small{
+    @include text(12px)
+}
