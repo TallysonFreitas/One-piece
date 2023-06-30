@@ -2,6 +2,9 @@
 @use 'cabecalho';
 @use 'apresentacao';
 @use 'loja';
+@use 'avaliacao';
+@use 'assinatura';
+@use'resumos';
 
 *{
     margin: 0;
@@ -17,11 +20,12 @@ body{
 .container{
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 @mixin title($fontSize:44px){
     font-size: $fontSize;
-    color: variaveis.$corDeTitulo;
+    
 }
 
 @mixin text($fontSize:14px){
@@ -30,15 +34,16 @@ body{
 }
 
 .title{
-    @include title(44px)
+    @include title(40px)
 }
 
 .title__big{
-    @include title(48px)
+    @include title(48px);
+    color: variaveis.$corDeTitulo;
 }
 
 .title__small{
-    @include title(40px)
+    @include title(32px)
 }
 
 .text{

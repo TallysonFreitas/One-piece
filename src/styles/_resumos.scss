@@ -1,0 +1,40 @@
+@use 'variaveis';
+
+.capitulos{
+    margin: 2vw auto;
+    &__title{
+        text-align: center;
+    }
+    .is-open{
+        .capitulos__item__header{
+            p:after{
+                content: '-';
+                font-size: 24px;
+            }
+        }
+
+        .capitulos__item__body{
+            display: block;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__item{
+        width: 100%;
+        &__header{
+            display: flex;
+            justify-content: space-between;
+
+            p:after{
+                content: '+';
+                font-size: 24px;
+            }
+        }
+
+        &__body{
+            display: none;
+        }
+
+        
+    }
+}

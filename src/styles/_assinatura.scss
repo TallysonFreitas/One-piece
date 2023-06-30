@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+.assinatura{
+    background-color: variaveis.$corCabacalho;
+
+    &__title{
+        margin-bottom: 1vw;
+
+    }
+
+    &__list{
+        width: 100%;
+        margin: 0 auto 16px;
+        &__item{
+            text-align: center;
+            display: block;
+        }
+    }
+
+    &__button{
+        display: block;
+        padding: 16px 0px;
+        width: 320px;
+        color: white;
+        background-color: variaveis.$corDeFont;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 12px;
+        text-decoration: none;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.392);
+    }
+
+    &__preco{
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}

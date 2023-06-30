@@ -1,0 +1,64 @@
+@use 'variaveis';
+
+.avaliacao{
+    margin: 2vw 0;
+
+    @media (max-width:768px){
+        margin: 4vh 0;
+    }
+
+    &__title{
+        text-align: center;
+        margin-bottom: 2vw;
+    }
+
+    &__item{
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.258);
+        max-width: 25%;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+
+        @media (max-width:768px){
+            max-width: 70%;
+            margin: 0 auto 20px;
+        }
+        
+
+
+        &__title{
+            text-align: center;
+            
+        }
+
+        &__stars{
+            width: 50%;
+        }
+
+        &__img{
+            width: 100%;
+            border-radius:0 0 8px 8px;
+        }
+    }
+}
+
+.align{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+
+    @media (max-width:768px){
+        display: block;
+    }
+
+    @media (max-width:1024px){
+        justify-content: space-around;
+    }
+}

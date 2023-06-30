@@ -1,7 +1,7 @@
 @use 'variaveis';
 
 .loja{
-    margin-top: 2vw;
+    margin:4vw 0;
 
     .container{
         display: flex;
@@ -12,30 +12,38 @@
 
     &__img{
         height: auto;
-        width: 50%;
+        width: 30%;
         max-width: 100%;
     }
 
     &__title{
         font-size: 44px;
-        margin-bottom: 2vw;
     }
 
     &__outdoor{
         display: grid;
-        grid-template-columns: repeat(5, 19%);
-        gap: 1.2%;
+        grid-template-columns: repeat(4, 24%);
+        gap: 1.33%;
+
+        @media (max-width:1024px){
+            grid-template-columns: repeat(3, 32%);
+            gap: 2%;
+        }
+        @media (max-width:768px){
+            grid-template-columns: repeat(2, 49%);
+            gap: 2%;
+        }
 
         &__item{
             position: relative;
-            max-height:15vw;
             overflow-y: hidden;
-            background-color: #f44;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.358);
+            background-color: #62929E;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.558);
             border-radius: 8px;
 
             h3{
                 text-align: center;
+                font-weight: normal;
             }
 
             img{
@@ -46,12 +54,15 @@
                 a{
                     position: absolute;
                     bottom: 40px;
-                    left: 27%;
+                    left: 0;
+                    width: 92%;
+                    margin: 0 4%;
                     color: variaveis.$corDeFont;
                     text-decoration: none;
                     border-radius: 8px;
                     background-color: variaveis.$corDeFundo;
-                    padding: 8px 40px;
+                    text-align: center;
+                    padding: 8px 0;
 
                     &:hover{
                         background-color: darken(variaveis.$corDeFundo,5%);
