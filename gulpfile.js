@@ -27,3 +27,7 @@ exports.default = function () {
     gulp.watch('./src/images/*',gulp.parallel(imageMin))
     gulp.watch('./src/scripts/*.js',gulp.parallel(comprimeJs))
 }
+
+exports.build = function () {  
+    gulp.parallel(comprimeJs,compilaSass,imageMin)
+}
