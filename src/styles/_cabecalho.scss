@@ -20,6 +20,9 @@
     }
 
     &__nav{
+        @media (max-width:768px){
+            display: none;
+        }
         &__item{
             display: inline;
             margin-left: 10px;

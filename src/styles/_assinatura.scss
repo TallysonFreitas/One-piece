@@ -28,6 +28,10 @@
         border-radius: 12px;
         text-decoration: none;
         box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.392);
+
+        &:hover{
+            background-color: darken(variaveis.$corDeFont, 5%);
+        }
     }
 
     &__preco{

@@ -22,16 +22,19 @@
 
     &__outdoor{
         display: grid;
-        grid-template-columns: repeat(4, 24%);
-        gap: 1.33%;
+        grid-template-columns: repeat(5, 19%);
+        
+        gap: 1.25%;
 
         @media (max-width:1024px){
-            grid-template-columns: repeat(3, 32%);
+            grid-template-columns: repeat(9, 32%);
             gap: 2%;
+            overflow-x: scroll;
         }
         @media (max-width:768px){
-            grid-template-columns: repeat(2, 49%);
+            grid-template-columns: repeat(9, 44%);
             gap: 2%;
+            overflow-x: scroll;
         }
 
         &__item{
